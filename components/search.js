@@ -110,9 +110,9 @@ export default function Search() {
 					<div className={styles.pageChange}>
 						<p className={styles.news}>{info.news}</p>
 						<div className={styles.buttonPage}>
-							<button onClick={() => setCount(count-1)} className={styles.right}>previous</button>
+							<a href="#top"><button onClick={() => setCount(count-1)} className={styles.right}>previous</button></a>
 							<h4>{count}</h4>
-			      			<button onClick={() => setCount(count+1)} className={styles.left}>next</button>
+			      			<a href="#top"><button onClick={() => setCount(count+1)} className={styles.left}>next</button></a>
 		      			</div>
 	      			</div>
 				) : info.exists && count===1 ? (
@@ -120,14 +120,14 @@ export default function Search() {
 						<p className={styles.news}>{info.news}</p>
 						<div className={styles.buttonPage}>
 							<h4>{count}</h4>
-		      				<button onClick={() => setCount(count+1)} className={styles.left}>next</button>
+		      				<a href="#top"><button onClick={() => setCount(count+1)} className={styles.left}>next</button></a>
 		      			</div>
 	      			</div>
 				) : info.exists && count===5 ? (
 					<div className={styles.pageChange}>
 						<p className={styles.news}>{info.news}</p>
 						<div className={styles.buttonPage}>
-							<button onClick={() => setCount(count-1)} className={styles.right}>previous</button>
+							<a href="#top"><button onClick={() => setCount(count-1)} className={styles.right}>previous</button></a>
 							<h4>{count}</h4>
 						</div>
 	      			</div>
