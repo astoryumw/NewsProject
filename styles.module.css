@@ -1,6 +1,66 @@
-.newsTable {
-	overflow: auto;
-	color: blue;
-	max-height: 250px;
-	max-width: 25%;
+.pageChange {
+	align-items: center;
+	display: flex;
+	overflow-y: auto;
+}
+
+.pageTable {
+	margin-top: 10%;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.searchBox {
+	margin-top: 60px;
+}
+
+.buttonPage {
+	margin-top: 800px;
+	right: 50%;
+	display: grid;
+	gap: 1rem;
+	grid-auto-flow: column;
+	position: absolute;
+}
+
+.news {
+	text-align: center;
+	margin: auto;
+}
+
+.left {
+	margin-left: 10px;
+}
+
+.right {
+	margin-right: 10px;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #D3D3D3;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+  width:  100px;
+  height: 100px;
+  margin-left: 90%;
+  margin-top: 15%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
